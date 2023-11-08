@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Ubuntu:wght@300;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #fff;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.navbar {
+    background-color: rgb(22, 7, 36);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    line-height: 5rem;
+}
+
+.left h1 {
+    font-size: 2.5rem;
+    cursor: pointer;
+}
+
+.checkBtn {
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+.checkBtn {
+    cursor: pointer;
+    font-size: 30px;
+    float: right;
+    color: #ed1e79;
+    line-height: 80px;
+}
+
+.right ul {
+    display: flex;
+    list-style: none;
+}
+
+.right ul li a {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 1s;
+}
+
+.right ul li a:hover {
+    background-color: #fff;
+    border-radius: 7px;
+    color: rgb(22, 7, 36);
+}
+
+@media screen and (max-width:805px) {
+    .list {
+        width: 100%;
+        height: 100vh;
+        background-color: rgb(22, 7, 36);
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 4rem;
+        left: 100%;
+        transition: all 1s;
+    }
+
+    #check {
+        display: none;
+    }
+
+    .checkBtn {
+        display: block;
+    }
+
+    #check:checked~ul {
+        left: 0%;
+    }
+}    
+
+
+    /* ____________________________________________________ */
+.add-emp-form{
+border-radius: 5px;
+background-color: #f2f2f2;
+/* padding: 20px; */
+width: 750px;
+margin-left: 20%;
+margin-top: 1%;
+}
+.add-form{
+padding-top: 5%;    
+width: 750px;
+margin:0 auto ;
+color: rgb(22, 7, 36);
+width: 700px;
+margin: 0 auto;
+}
+.add-form input[type=text], select {
+width: 100%;
+padding: 12px 20px;
+margin: 8px 0;
+display: inline-block;
+border: 1px solid #ccc;
+border-radius: 4px;
+box-sizing: border-box;
+color: rgb(22, 7, 36);
+}
+
+.add-form input[type=submit] {
+width: 100%;
+background-color: #4CAF50;
+color: white;
+padding: 14px 20px;
+margin: 8px 0;
+border: none;
+border-radius: 4px;
+cursor: pointer;
+}
+.add-form label{
+    color: rgb(22, 7, 36);
+}
+
+.add-form input[type=submit]:hover {
+background-color: #45a049; 
+}
+/* ---------------------------------------------------default-------------------------- -------  */
+.table {
+font-family: arial, sans-serif;
+border-collapse: collapse;
+width: 100%;
+color: black;
+margin: 0 auto ;
+width: 70%;
+}
+.table .table-data a{
+    color: black;
+}
+
+.table-data{
+border: 1px solid #dddddd;
+text-align: left;
+padding: 8px;
+color: black;
+}
+
+tr:nth-child(even) {
+background-color: #dddddd;
+}
+
